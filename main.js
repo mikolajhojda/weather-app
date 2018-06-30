@@ -63,7 +63,9 @@ function fail() {}
 
 var d = new Date();
 if (d.getMonth() < 10) {
-    document.getElementById('date').textContent = d.getDate() + ".0" + d.getMonth();
+    let month = d.getMonth();
+    month = month + 1;
+    document.getElementById('date').textContent = d.getDate() + ".0" + month;
 }
 
 if (d.getMonth > 9) {
