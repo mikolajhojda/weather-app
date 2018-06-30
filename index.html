@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Teko" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <header>
+        <section class="name-line">
+            <h1 class="name" id="city"></h1>
+            <h1 class="date" id="date"></h1>
+        </section>
+        <section class="weather">
+            <img class="weather-icon" id="weather" src="" />
+            <h2 id="temp" class="temp"></h2>
+        </section>
+    </header>
+    <main>
+        <table class="details">
+            <tr>
+                <td>Pressure</td>
+                <td id="pres"></td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td id="hum"></td>
+            </tr>
+            <tr>
+                <td>Wind Speed</td>
+                <td id="speed"></td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="geolocation.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
